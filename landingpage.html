@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./CSS/blog.css" />
+    <script
+      src="https://kit.fontawesome.com/5733a6f7bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="blog.js" defer></script>
+  </head>
+  <body>
+    <main class="landingpage">
+      <nav class="navbar">
+        <div class="navbar-img">
+          <img src="./img/Vector.png" alt="vector.img" class="vector-img" />
+          <img
+            src="./img/PaddyBlog.png"
+            alt="paddyblog.img"
+            class="paddyblog-img"
+          />
+        </div>
+        <div class="menulist">
+          <div class="menulist-item">Home</div>
+          <div class="menulist-item">About</div>
+          <div class="menulist-item">Features</div>
+          <!-- <div class="menulist-item">Blog</div> -->
+        </div>
+        <div class="comm-login">
+          <h5 class="comm"><a href="blog.html">Community</a></h5>
+          <button class="login"><a href="./login.html">Login</a></button>
+        </div>
+      </nav>
+      <div class="topimg-container">
+        <div class="content">
+          <h1 class="top-header">
+            Empowering Women in Tech Through <br />
+            Micro-Blogging
+          </h1>
+          <p class="top-body">
+            Share your voice, connect with a community, and explore bite-sized
+            inspiration
+          </p>
+          <div class="topimg-btns">
+            <a href="index.html">
+              <button class="Register-btn">Register Now</button>
+            </a>
+            <a href="about.html">
+              <button class="learn-btn">Learn More</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="why-paddyblog">
+        <h4 class="why-header">Why PaddyBlog?</h4>
+        <p class="why-body">
+          Paddy Blog is a platform designed specifically for women in tech,
+          offering a space to share experiences in a concise format.
+        </p>
+        <div class="why-paddyblog-container">
+          <div class="why-paddyblog-left" id="text">
+            <div class="text-with-icon">
+              <span class="icon-wrapper"
+                ><i
+                  class="fa-solid fa-people-group"
+                  style="color: #ecf0f1"
+                  class="icon"
+                ></i>
+              </span>
+              <span
+                >Like, comment, and follow other creators to build
+                connections.</span
+              >
+            </div>
+            <div class="text-with-icon">
+              <span class="icon-wrapper">
+                <i
+                  class="fa-solid fa-clipboard"
+                  style="color: #ecf0f1"
+                  class="icon"
+                ></i>
+              </span>
+              <span>Write short, impactful posts with ease.</span>
+            </div>
+            <div class="text-with-icon">
+              <span class="icon-wrapper">
+                <i
+                  class="fa-solid fa-clipboard"
+                  style="color: #ecf0f1"
+                  class="icon"
+                ></i>
+              </span>
+              <span>Showcase your interests and creative focus</span>
+            </div>
+            <div class="text-with-icon">
+              <span class="icon-wrapper">
+                <i
+                  class="fa-solid fa-folder-tree"
+                  style="color: #ecf0f1"
+                  class="icon"
+                ></i>
+              </span>
+              <span
+                >Discover content by category, trending topics, or search</span
+              >
+            </div>
+            <!-- <button class="getstarted-btn">Get Started</button> -->
+          </div>
+          <div class="why-paddyblog-right">
+            <img
+              src="./img/ladyseatingimg.png"
+              alt="lady seating image"
+              id="ladyseating-img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="create-a-post">
+        <h3>What Can You Do With PaddyBlog?</h3>
+        <div class="image-gap">
+          <div class="create-a-post-img">
+            <img
+              src="./img/create1-post.img.png"
+              alt="laptoplady"
+              id="laptoplady.img"
+            />
+            <p>Connect with like-minded women in tech.</p>
+          </div>
+          <div class="create-a-post-img">
+            <img
+              src="./img/create2-post.img.png"
+              alt="calender"
+              id="calender.img"
+            />
+            <p>Create and consume content that fits into your busy schedule.</p>
+          </div>
+          <div class="create-a-post-img">
+            <img
+              src="./img/create-post.img.png"
+              alt="waterfall"
+              id="waterfall.img"
+            />
+            <p>Mobile-optimized for on-the-go inspiration.</p>
+          </div>
+        </div>
+        <a href="createpost.html"><button class="start-btn">Start Creating</button></a>
+      </div>
+      <section class="testimonials">
+        <div class="testimonial-content">
+          <p class="testimonial-header">Testimonials</p>
+          <p class="testimonial-body">What Our Community is Saying</p>
+          <div class="carousel-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel">
+              <div class="testimonial">
+                <div class="testimonials-content">
+                  <div class="user-img">
+                    <img src="./img/Ellipse.png" alt="User Image" />
+                  </div>
+                  <div class="testimonial-text">
+                    <p class="review">
+                      "Sharing my experiences in tech has never been easier.
+                      Paddy Blog platform is user-friendly, and the community is
+                      genuinely encouraging."
+                    </p>
+                    <h4 class="salamah">Salamah Ali</h4>
+                    <p class="ux">UX Researcher</p>
+                  </div>
+                </div>
+              </div>
+
+        <div class="testimonial">
+                <div class="testimonials-content">
+                  <div class="user-img">
+                    <img src="./img/Ellipse.png" alt="User Image" />
+                  </div>
+                  <div class="testimonial-text">
+                    <p class="review">
+                      "I learned so much from the community. The discussions are
+                      always insightful and supportive!"
+                    </p>
+                    <h4 class="salamah">John Smith</h4>
+                    <p class="ux">Data Scientist</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial">
+                <div class="testimonials-content">
+                  <div class="user-img">
+                    <img src="./img/Ellipse.png" alt="User Image" />
+                  </div>
+                  <div class="testimonial-text">
+                    <p class="review">
+                      "Great platform for connecting with like-minded people in
+                      the tech community. Highly recommend it!"
+                    </p>
+                    <h4 class="salamah">Jane Doe</h4>
+                    <p class="ux">Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="testimonial"></div>
+                <div class="testimonials-content">
+                  <div class="user-img">
+                    <img src="./img/Ellipse.png" alt="User Image" />
+                  </div>
+                  <div class="testimonial-text">
+                    <p class="review">
+                      "Great platform for connecting with like-minded people in
+                      the tech community. Highly recommend it!"
+                    </p>
+                    <h4 class="salamah">Jane Doe</h4>
+                    <p class="ux">Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <button class="next" onclick="nextSlide()">&#10095;</button> -->
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+      
+        <div class="content">
+          <div class="Contact">
+            <h4 class="contact">Contact the Publisher</h4>
+            <p class="email-contact"><a href="#">paddyblog@mail.com</a></p>
+            <p class="mobile-number"><a href="#">+234 904 904 209</a></p>
+          </div>
+          <div class="Explorate">
+            <h4 class="explorate">Explorate</h4>
+            <p class="explorate-about">
+              <a href="#"
+                >About</a
+              >
+            </p>
+            <p class="explorate-partners">
+              <a href="#"
+                >Partners</a
+              >
+            </p>
+            
+            <p class="job-opportunities">
+              <a href="#"
+                >Job opportunities</a
+              >
+            </p>
+            <p class="advertise">
+              <a href="#"
+                >Advertise</a
+              >
+            </p>
+            <p membership>
+              <a href="#"
+                >Membership</a
+              >
+            </p>
+          </div>
+          <div class="details">
+            <h4 class="headquaters">Headquarter</h4>
+            <address>191 Middleville Road,<br>
+              NY 1001, Sydney <br>
+              Australia</address>
+          </div>
+          <div class="socials">
+            <h4 class="socials_links">Connections</h4>
+            
+              <div class="icons">
+                  <a href="#"
+                ><i class="fab fa-linkedin"></i> </a
+              >
+            
+              <a href="#"
+                ><i class="fab fa-twitter"></i> </a
+              >
+            
+              <a href="https://github.com/farazc60"
+                ><i class="fab fa-github"></i> </a
+              >
+            
+              <a href="https://www.facebook.com/codewithfaraz"
+                ><i class="fab fa-facebook"></i> </a
+              >
+            
+              <a href="https://www.instagram.com/codewithfaraz"
+                ><i class="fab fa-instagram"></i> </a
+              >
+              </div>
+          </div>
+        </div>
+        <hr />
+        <footer>
+          
+          <div class="legal">
+              <p class="rights">2024 | PaddyBlog. All Rights Reserved</p>
+              <div class="Subscribe">
+                <p><a href="#" style="color: #F39C12;">Subscribe Now</a></p>
+              </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

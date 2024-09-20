@@ -4,52 +4,432 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
-    <link rel="stylesheet" href="./CSS/blog.css">
+    <link rel="stylesheet" href="./CSS/blogg.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
+<main>
+  <section>
     <header>
-        <div class="logo">
-            <img src="./images/logo.png" alt="Paddy Blog Logo">
+      <div class="logo">
+          <img src="./images/logo.png" alt="Paddy Blog Logo">
+      </div>
+  </header>
+  <nav class="nav">
+      <ul>
+          <li><a href="#"><h2>Blog</h2></a></li>
+      </ul>
+      <div class="search-bar">
+          <input type="search" placeholder="Search">
+          <button class="search-btn">🔍</button>
+      </div>
+  </nav>
+  <section class="buttons">
+      <button>Tech in Future</button>
+      <button>What People Are Saying</button>
+      <button>Tech in Future</button>
+      <button>Scheduled Webinars</button>
+  </section>
+  <div class="topic"><h2>Trending Topics</h2></div>
+  <article>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image1.png" alt="image1" />
         </div>
-    </header>
-    <nav class="nav container">
-        <ul>
-            <li><a href="#"><h2>Blog</h2></a></li>
-        </ul>
-        <div class="search-bar">
-            <input type="search" placeholder="Search">
-            <button class="search-btn">🔍</button>
-        </div>
-    </nav>
-    <section class="buttons">
-        <button>Tech in Future</button>
-        <button>What People Are Saying</button>
-        <button>Tech in Future</button>
-        <button>Scheduled Webinars</button>
-    </section>
+        <div class="card-body">
+          <h4>
+              <img src="./images/image2.png" alt="user" />
+             <a href=""> Breaking into Tech: 5 Steps for Women Looking to Start a Career in Tech
+          </a>
+          </h4>
+          <p>
+              A guide offering practical advice for women looking to transition into tech, covering mentorship, skill-building, and networking strategies.
 
-    <section class="trending-topics">
-        <h2>Trending Topics</h2>
-        <div class="topics-grid">
-            <div class="topic">
-                <img src="image1.png" alt="Breaking into Tech">
-                <h3>Breaking into Tech: 5 Steps for Women Looking to Start a Career in Tech</h3>
-                <button class="follow-btn">Follow Author</button>
+          </p>
+          <div class="user">
+            
+            <div class="user-info">
+              <div class="info">
+              <small>22nd August, 2024</small>
+              </div>
+              <div class="icons">
+                  <span class="number">301</span>
+                  <span><i class='bx bx-like'></i></span>
+              <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+              <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+              </div>
             </div>
-            <div class="topic">
-                <img src="image2.png" alt="Quick Tips">
-                <h3>Quick Tips: How to Write Engaging Technical Content in Less Time</h3>
-                <button class="follow-btn">Follow Author</button>
-            </div>
-            <div class="topic">
-                <img src="image3.png" alt="Building Community">
-                <h3>Building a Supportive Tech Community: Why Representation Matters</h3>
-                <button class="follow-btn">Follow Author</button>
-            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
         </div>
-    </section>
-    <script src="js/script.js"></script>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image2.png" alt="image2" />
+        </div>
+        <div class="card-body">
+          
+          <h4>
+              <img src="./images/image3.png" alt="city" />
+            <a href="#"><a href=""> Quick Tips: How to Write Engaging Technical Content in Less Time
+          </a>
+          </h4>
+          <p>
+              Short and actionable tips on how to write concise, impactful technical content that stands out, even when you&apos;re pressed for time.
+          </p>
+          <div class="user">
+            <div class="user-info">
+              <div class="info">
+                  <small>22nd August, 2024</small>
+                  </div>
+                  <div class="icons">
+                      <span class="number">301</span>
+                      <span><i class='bx bx-like'></i></span>
+                  <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+                  <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+                  </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image3.png" alt="image3" />
+        </div>
+        <div class="card-body">
+          <h4>
+              <img src="./images/image2.png" alt="user" />
+            <a href="#">Building a Supportive Tech Community: Why Representation Matters
+          </a>
+          </h4>
+          <p>
+              Discuss the importance of creating inclusive spaces for women in tech and how platforms like PaddyBlog can foster meaningful connections.
+          </p>
+          <div class="user">
+            <div class="user-info">
+              <div class="info">
+                  <small>22nd August, 2024</small>
+                  </div>
+                  <div class="icons">
+                      <span class="number">301</span>
+                      <span><i class='bx bx-like'></i></span>
+                  <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+                  <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+                  </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+  </article>
+      <article>
+        <div class="topic"><h2>Newest Post</h2></div>
+  <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image1.png" alt="image1" />
+        </div>
+        <div class="card-body">
+          <h4>
+              <img src="./images/image2.png" alt="user" />
+             <a href="https://heelsandtech.com/tips-for-women-transitioning-into-tech/"> Breaking into Tech: 5 Steps for Women Looking to Start a Career in Tech
+          </a>
+          </h4>
+          <p>
+              A guide offering practical advice for women looking to transition into tech, covering mentorship, skill-building, and networking strategies.
+
+          </p>
+          <div class="user">
+            
+            <div class="user-info">
+              <div class="info">
+              <small>22nd August, 2024</small>
+              </div>
+              <div class="icons">
+                  <span class="number">301</span>
+                  <span><i class='bx bx-like'></i></span>
+              <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+              <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+              </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image2.png" alt="ballons" />
+        </div>
+        <div class="card-body">
+          
+          <h4>
+              <img src="./images/image6.png" alt="city" />
+            <a href="#"><a href=""> Quick Tips: How to Write Engaging Technical Content in Less Time
+          </a>
+          </h4>
+          <p>
+              Short and actionable tips on how to write concise, impactful technical content that stands out, even when you&apos;re pressed for time.
+          </p>
+          <div class="user">
+            <div class="user-info">
+              <div class="info">
+                  <small>22nd August, 2024</small>
+                  </div>
+                  <div class="icons">
+                      <span class="number">301</span>
+                      <span><i class='bx bx-like'></i></span>
+                  <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+                  <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+                  </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image6.png" alt="city" />
+        </div>
+        <div class="card-body">
+          <h4>
+              <img src="./images/image2.png" alt="user" />
+            <a href="#">Building a Supportive Tech Community: Why Representation Matters
+          </a>
+          </h4>
+          <p>
+              Discuss the importance of creating inclusive spaces for women in tech and how platforms like PaddyBlog can foster meaningful connections.
+          </p>
+          <div class="user">
+            <div class="user-info">
+              <div class="info">
+                  <small>22nd August, 2024</small>
+                  </div>
+                  <div class="icons">
+                      <span class="number">301</span>
+                      <span><i class='bx bx-like'></i></span>
+                  <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+                  <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+                  </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+    </article>
+      <article>
+        <div class="topic"><h2>Post You Missed</h2></div>
+  <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image 7.png" alt="image1" />
+        </div>
+        <div class="card-body">
+          <h4>
+              <img src="./images/image2.png" alt="user" />
+             <a href=""> Breaking into Tech: 5 Steps for Women Looking to Start a Career in Tech
+          </a>
+          </h4>
+          <p>
+              A guide offering practical advice for women looking to transition into tech, covering mentorship, skill-building, and networking strategies.
+
+          </p>
+          <div class="user">
+            
+            <div class="user-info">
+              <div class="info">
+              <small>22nd August, 2024</small>
+              </div>
+              <div class="icons">
+                  <span class="number">301</span>
+                  <span><i class='bx bx-like'></i></span>
+              <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+              <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+              </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image8.png" alt="ballons" />
+        </div>
+        <div class="card-body">
+          
+          <h4>
+              <img src="./images/image3.png" alt="city" />
+            <a href="#"><a href=""> Quick Tips: How to Write Engaging Technical Content in Less Time
+          </a>
+          </h4>
+          <p>
+              Short and actionable tips on how to write concise, impactful technical content that stands out, even when you&apos;re pressed for time.
+          </p>
+          <div class="user">
+            <div class="user-info">
+              <div class="info">
+                  <small>22nd August, 2024</small>
+                  </div>
+                  <div class="icons">
+                      <span class="number">301</span>
+                      <span><i class='bx bx-like'></i></span>
+                  <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+                  <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+                  </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image9.png" alt="city" />
+        </div>
+        <div class="card-body">
+          <h4>
+              <img src="./images/image2.png" alt="user" />
+            <a href="#">Building a Supportive Tech Community: Why Representation Matters
+          </a>
+          </h4>
+          <p>
+              Discuss the importance of creating inclusive spaces for women in tech and how platforms like PaddyBlog can foster meaningful connections.
+          </p>
+          <div class="user">
+            <div class="user-info">
+              <div class="info">
+                  <small>22nd August, 2024</small>
+                  </div>
+                  <div class="icons">
+                      <span class="number">301</span>
+                      <span><i class='bx bx-like'></i></span>
+                  <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+                  <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+                  </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+    </article>
+      <article>
+        <div class="topic"><h2>Post You May Like</h2></div>
+  <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image10.png" alt="image10" />
+        </div>
+        <div class="card-body">
+          <h4>
+              <img src="./images/image2.png" alt="user" />
+             <a href=""> Breaking into Tech: 5 Steps for Women Looking to Start a Career in Tech
+          </a>
+          </h4>
+          <p>
+              A guide offering practical advice for women looking to transition into tech, covering mentorship, skill-building, and networking strategies.
+
+          </p>
+          <div class="user">
+            
+            <div class="user-info">
+              <div class="info">
+              <small>22nd August, 2024</small>
+              </div>
+              <div class="icons">
+                  <span class="number">301</span>
+                  <span><i class='bx bx-like'></i></span>
+              <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+              <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+              </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image11.png" alt="image11" />
+        </div>
+        <div class="card-body">
+          
+          <h4>
+              <img src="./images/image3.png" alt="city" />
+            <a href="#"><a href=""> Quick Tips: How to Write Engaging Technical Content in Less Time
+          </a>
+          </h4>
+          <p>
+              Short and actionable tips on how to write concise, impactful technical content that stands out, even when you&apos;re pressed for time.
+          </p>
+          <div class="user">
+            <div class="user-info">
+              <div class="info">
+                  <small>22nd August, 2024</small>
+                  </div>
+                  <div class="icons">
+                      <span class="number">301</span>
+                      <span><i class='bx bx-like'></i></span>
+                  <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+                  <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+                  </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="./images/image12.png" alt="image12" />
+        </div>
+        <div class="card-body">
+          <h4>
+              <img src="./images/image2.png" alt="user" />
+            <a href="#">Building a Supportive Tech Community: Why Representation Matters
+          </a>
+          </h4>
+          <p>
+              Discuss the importance of creating inclusive spaces for women in tech and how platforms like PaddyBlog can foster meaningful connections.
+          </p>
+          <div class="user">
+            <div class="user-info">
+              <div class="info">
+                  <small>22nd August, 2024</small>
+                  </div>
+                  <div class="icons">
+                      <span class="number">301</span>
+                      <span><i class='bx bx-like'></i></span>
+                  <span><i class='bx bxs-heart' style='color:#e21313'  ></i></span>
+                  <span><i class='bx bx-smile' style='color:#e2c113'  ></i></span>
+                  </div>
+            </div>
+          </div>
+          <button class="tag tag-teal">Follow Author</button>
+        </div>
+      </div>
+    </article>
+      
+  </section>
+  <section>
+    <div>
+      <div class="see"><a href="#">See More</a></div>
+      </div> 
+  </section>
+  <section>
+    <div class="footer">
+      <div class="content-right">
+<h3>Want to connect with top women in tech?</h3>
+      </div>
+      <div class="content-left">
+<button class="explore-btn">Explore our
+  community here</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="last">
+      <h4>Copyright 2024</h4>
+    </div>
+  </section>
+</main>        
 </body>
 </html>
