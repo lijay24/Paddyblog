@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -336,14 +338,16 @@ form div.incorrect #input-field {
 .comm-login {
   display: flex;
   gap: 5rem;
+  align-items: center;
 }
 
 .comm-login .comm {
   color: #2c3e50;
-  font-family: Tinos, "Merriweather", serif;
+  font-family: "Tinos", serif;
   text-align: center;
   font-size: 12px;
   font-weight: 300;
+  text-decoration: none;
   align-items: center;
   cursor: pointer;
 }
@@ -358,7 +362,7 @@ form div.incorrect #input-field {
 .login {
   background-color: #f39c12;
   color: #fff;
-  font-family: Tinos, "Merriweather", serif;
+  font-family: "Tinos", serif;
   box-shadow: 0 0 0 1px #f39c12;
   border: 1px solid transparent;
   border-radius: 24px;
@@ -369,19 +373,36 @@ form div.incorrect #input-field {
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;
+  text-decoration: none;
   outline: none;
+}
+
+.login a {
+  text-decoration: none;
+  color: #fff;
+
 }
 
 .login:hover {
   background-color: #f09400;
 }
 
+.banner-container {
+  width: 100%;
+  padding: 0 4rem;
+  margin-bottom: 22px;
+}
+
 .topimg-container {
-  width: auto;
-  height: 100vh;
-  margin: 0 3rem;
-  background-image: url("./img/topframe.png");
+  width: 100%;
+  height: 600px;
+  /* margin: 0 3rem; */
+  padding: 0 3rem;
+  background-image: url("../img/topframe.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .content {
