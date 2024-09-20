@@ -32,30 +32,62 @@
             const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return re.test(String(email).toLowerCase());
         }
+
+        async function connectGoogle() {
+let response = await fetch("https://mini-muse1.onrender.com/googleSignup", {
+
+    method: 'GET', // or 'POST', 'PUT', 'DELETE', etc.
+
+    mode: 'no-cors', // enable CORS
+
+    headers: {
+
+        'Content-Type': 'application/json', // Specify content type
+
+        'Accept': 'application/json', // Specify acceptable response format
+
+        // You may add other necessary headers, such as Authorization if needed
+
+    },
+
+    credentials: 'same-origin', // Use 'include' if you need cookies or authentication to be sent
+
+}
+
+
+
+
+
+)
+let data = await response.json()
+console.log(data)
+        }
     </script>
 </head>
 <body>
     <div class="full-container">
         <div class="wrapper">
             <div id="inner">
-                <form action="#" class="container" onsubmit="return validateForm()">
-                    <h4>Welcome Back to PaddyBlog</h4>
-                    <p>We've missed you! Let's get you back to sharing and exploring.</p>
-                    <div class="form-wrapper">
-                        <label for="email">Email/ Username:</label>
-                        <input type="email" id="email" placeholder="sample@gmail.com" required>
-                    </div>
-                    <div class="form-wrapper">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" placeholder="*********" required>
-                    </div>
-                    <div class="login">
-                        <button type="submit">Login</button>
-                    </div>
-                    <div id="line">
-                        <hr> or <hr>
-                    </div>
-                    <div class="socials">
+                <div class="inner-content">
+                    <form action="#" class="container" onsubmit="return validateForm()">
+                        <h4>Welcome Back to PaddyBlog</h4>
+                        <p>We've missed you! Let's get you back to sharing and exploring.</p>
+                        <div class="form-wrapper">
+                            <label for="email">Email/ Username:</label>
+                            <input type="email" id="email" placeholder="sample@gmail.com" required>
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" placeholder="*********" required>
+                        </div>
+                        <div class="login">
+                            <button type="submit">Login</button>
+                        </div>
+                        <div id="line">
+                            <hr> or <hr>
+                        </div>
+                    </form>
+                    <div onclick="connectGoogle()" class="socials">
                         <button id="google-btn">
                             <img src="./images/google.svg" alt="google"><span class="text">Google</span>
                         </button>
@@ -63,7 +95,7 @@
                     <div class="sign-up">
                         <h5>Don't have an account? <a href="index.html">Sign Up</a></h5>
                     </div>
-                </form>
+                </div>
                 <div class="image-holder">
                     <img src="./images/Rectangle 2777.png" alt="Welcome Image">
                 </div>
